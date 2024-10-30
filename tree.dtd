@@ -1,0 +1,11 @@
+<!DOCTYPE menu [
+  <!ELEMENT menu (tableFood, tableHotBeverage, tableBeverage)>
+  <!ELEMENT tableFood (product+)>
+  <!ELEMENT tableHotBeverage (title, product+, description)>
+  <!ELEMENT tableBeverage (product+)>
+  <!ELEMENT product (title?, price, description?, size?)>
+  <!ELEMENT title (#PCDATA)>
+  <!ELEMENT price (#PCDATA)>
+  <!ELEMENT description (#PCDATA)>
+  <!ELEMENT size (#PCDATA)>
+]>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE menu SYSTEM "tree.dtd">
+<menu>
+    <tableFood>
+        <product>
+            <title>Beetroot and feta salad</title>
+            <price>$15.00</price>
+            <description>Suitable for vegetarians, made with fresh beetroot</description>
+            <image>img/beetroot_salad.jpg</image>
+        </product>
+        <product>
+            <title>Sourdough Rye Sandwich</title>
+            <price>$18.00</price>
+            <description>Cheese and salad sandwich made with organic, sourdough rye bread</description>
+            <image>img/rye_sandwich.jpg</image>
+        </product>
+        <product>
+            <title>Spinach Pie and Salad</title>
+            <price>$20.00</price>
+            <description>Tasty pie with salad</description>
+            <image>img/spinach_pie.jpg</image>
+        </product>
+        <product>
+            <title>Feta pancakes with salad</title>
+            <price>$19.50</price>
+            <description>Tasty pancake filled with feta and salad</description>
+            <image>img/feta_pancakes.jpg</image>
+        </product>
+    </tableFood>
+
+    <tableHotBeverage>
+        <title>Coffee and hot chocolates</title>
+        <product>
+            <size>Small</size>
+            <price>$3.00</price>
+            <image>img/coffeSize.jpg</image>
+        </product>
+        <product>
+            <size>Regular</size>
+            <price>$4.00</price>
+            <image>img/coffeSize.jpg</image>
+        </product>
+        <product>
+            <size>Large</size>
+            <price>$4.50</price>
+            <image>img/coffeSize.jpg</image>
+        </product>
+        <description>For coffee, please inform the staff of the coffee type.</description>
+    </tableHotBeverage>
+
+    <tableBeverage>
+        <product>
+            <title>Soft Drink</title>
+            <price>$3.00</price>
+            <image>img/soft_drink.jpg</image>
+        </product>
+        <product>
+            <title>Fresh juice</title>
+            <price>$6.00</price>
+            <image>img/fresh_juice.jpg</image>
+        </product>
+        <product>
+            <title>Still/Sparkling water</title>
+            <price>$2.00</price>
+            <image>img/bottled_water.jpg</image>
+        </product>
+    </tableBeverage>
+</menu>

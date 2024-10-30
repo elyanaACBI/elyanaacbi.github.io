@@ -1,0 +1,40 @@
+menu
+├── tableFood
+│   ├── product
+│   │   ├── title
+│   │   ├── price
+│   │   └── description
+│   ├── product
+│   │   ├── title
+│   │   ├── price
+│   │   └── description
+│   ├── product
+│   │   ├── title
+│   │   ├── price
+│   │   └── description
+│   └── product
+│       ├── title
+│       ├── price
+│       └── description
+├── tableHotBeverage
+│   ├── title
+│   ├── product
+│   │   ├── size
+│   │   └── price
+│   ├── product
+│   │   ├── size
+│   │   └── price
+│   ├── product
+│   │   ├── size
+│   │   └── price
+│   └── description
+└── tableBeverage
+    ├── product
+    │   ├── title
+    │   └── price
+    ├── product
+    │   ├── title
+    │   └── price
+    └── product
+        ├── title
+        └── price
