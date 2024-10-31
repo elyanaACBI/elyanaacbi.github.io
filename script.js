@@ -52,3 +52,47 @@ function loadXMLMenu() {
         })
         .catch(error => console.log("Error loading XML:", error));
 }
+
+
+
+function loadBranchInfo() {
+    fetch('branches.xml')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error("Errore nel caricamento del file XML");
+            }
+            return response.text();
+        })
+        .then(data => {
+            console.log("XML caricato correttamente.");
+            const parser = new DOMParser();
+            const xmlDoc = parser.parseFromString(data, "application/xml");
+
+            function createBranchHTML(branchNode) {
+                const street = branchNode.querySelector("street")?.textContent || "N/A";
+                const city = branchNode.querySelector("city")?.textContent || "N/A";
+                const state = branchNode.querySelector("state")?.textContent || "N/A";
+                const contact = branchNode.querySelector("contact")?.textContent || "N/A";
+                const weekdayHours = branchNode.querySelector("weekday")?.textContent || "N/A";
+                const weekendHours = branchNode.querySelector("weekend")?.textContent || "N/A";
+                const mapLink = branchNode.querySelector("iframe")?.textContent || "#";
+
+                return `
+                    <div class="branch">
+                        <h3>Branch</h3>
+                        <p><strong>Address:</strong> ${street}, ${city}, ${state}</p>
+                        <p><strong>Contact:</strong> ${contact}</p>
+                        <p><strong>Opening Hours:</strong></p>
+                        <p>Weekdays: ${weekdayHours}</p>
+                        <p>Weekend: ${weekendHours}</p>
+                        <p><a href="${mapLink}" target="_blank">Address on Google Maps</a></p>
+                    </div>`;
+            }
+
+            const branches = Array.from(xmlDoc.querySelectorAll("branch")).map(createBranchHTML).join("");
+            document.querySelector(".contactInfo").innerHTML = branches;
+        })
+        .catch(error => console.error("Error loading XML:", error));
+}
+
+loadBranchInfo();
