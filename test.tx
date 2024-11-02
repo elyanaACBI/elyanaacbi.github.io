@@ -1,0 +1,41 @@
+branches 
+│ 
+├── branch 
+│   ├── address 
+│   │   ├── street 
+│   │   ├── city 
+│   │   ├── state 
+│   │   └── mapLink 
+│   ├── contact 
+│   └── openingHours 
+│       ├── weekday 
+│       └── weekend 
+│ 
+├── branch 
+│   ├── address 
+│   │   ├── street 
+│   │   ├── city 
+│   │   ├── state 
+│   │   └── mapLink 
+│   ├── contact 
+│   └── openingHours 
+│       ├── weekday 
+│       └── weekend 
+│ 
+└── branch 
+    ├── address 
+    │   ├── street 
+    │   ├── city 
+    │   ├── state 
+    │   └── mapLink 
+    ├── contact 
+    └── openingHours 
+        ├── weekday 
+        └── weekend 
+ 
+Explanation:   
+Main Elements: <branches> serves as the main container. 
+ 
+Child Elements: Each <branch> represents a specific location, containing <address>, <contact>, and <openingHours>. The <address> element includes <street>, <city>, <state>, and <mapLink>, while <openingHours> encompasses <weekday> and <weekend>. 
+ 
+Role Assignment: The elements <street>, <city>, and <state> provide address details; <contact> gives the branch’s phone number, and <weekday> and <weekend> define the operational hours. The <mapLink> element contains a link to Google Maps for each location’s address. These components are essential for organizing information about each branch clearly and efficiently. 

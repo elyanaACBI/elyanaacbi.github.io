@@ -7,22 +7,35 @@
 }
 
 #logo {
-    height: 43px;
-    width: 121px;
-    margin: 5px 0 5px 5px;
+    height: 80px;
+    margin: -5px 0 -5px 5px;
+}
+.divLogo{
+    
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: lightgrey;
+    opacity: 0.8;
+    height: 450px;
+    width: 100%;
+    justify-items: center;
+    padding-top: 250px;
+    font-size: xx-large;
 }
 
 .imgMainBanner {
     width: 100%;
-    height: 100%;
 }
 
 #mainBanner {
+
     display: flex;
-    margin: 2em 3em 3em 2em;
     border: 2px solid var(--cfEspresso);
     border-radius: 4px;
     justify-content: center;
+    height: 700px;
+    width: 100%;
 }
 
 .banner {
@@ -30,12 +43,14 @@
     height: 234px;
     background-color: var(--cfCrema);
     margin: 8px;
+    flex-wrap: wrap;
 }
 
 .ulNav {
     display: flex;
     flex-direction: row;
-    align-self: flex-end;
+    align-self: center;
+    text-decoration: var(--cfEspresso);
 }
 
 .liNav {
@@ -49,7 +64,7 @@
     top: 0;
     width: 100%;
     background-color: var(--cfBody);
-    height: 50px;
+    height: 70px;
     display: flex;
     border: 2px solid black;
 }
@@ -219,7 +234,7 @@ html {
     }
 
     .imgBanner {
-        width: 150px;
+        width: 100%;
     }
 
     .imgMainBanner {

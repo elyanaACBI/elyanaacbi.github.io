@@ -1,5 +1,4 @@
 const currentYear = new Date().getFullYear();
-
 document.getElementById("currentYear").textContent = currentYear;
 
 function envoy(){
@@ -75,7 +74,7 @@ function loadBranchInfo() {
                 const contact = branchNode.querySelector("contact")?.textContent || "N/A";
                 const weekdayHours = branchNode.querySelector("weekday")?.textContent || "N/A";
                 const weekendHours = branchNode.querySelector("weekend")?.textContent || "N/A";
-                const mapLink = branchNode.querySelector("iframe")?.textContent || "#";
+                const mapLink = branchNode.querySelector("mapLink")?.textContent || "#";
 
                 return `
                     <div class="branch">
