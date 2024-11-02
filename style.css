@@ -10,17 +10,7 @@
     height: 80px;
     margin: -5px 0 -5px 5px;
 }
-.divLogo{
-    
-    position: absolute;
-    background-color: lightgrey;
-    opacity: 0.8;
-    height: 450px;
-    width: 100%;
-    justify-items: center;
-    padding: 125px 0;
-    font-size: xx-large;
-}
+
 
 .imgMainBanner {
     width: 100%;
@@ -223,18 +213,8 @@ html {
 
 
 @media (max-width: 700px) {
-
-     .divLogo{
     
-        position: absolute;
-        background-color: lightgrey;
-        opacity: 0.8;
-        height: 450px;
-        width: 100%;
-        justify-items: center;
-        padding: 125px 0;
-        font-size: xx-large;
-    }
+
     .banner {
         font-size: xx-small;
         flex-wrap: wrap;
