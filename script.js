@@ -37,9 +37,10 @@ function loadXMLMenu() {
             const hotBeverageSection = xmlDoc.querySelector("tableHotBeverage");
             if (hotBeverageSection) {
                 const hotBeverageTitle = "<h2>Hot Beverages</h2>";
+                const hotBeverageSubTitle = "<h3>Coffe, hot chocolate and tea</h3>";
                 const hotBeverageProducts = Array.from(hotBeverageSection.querySelectorAll("product")).map(createProductHTML).join("");
                 const hotBeverageDescription = hotBeverageSection.querySelector("description") ? `<p>${hotBeverageSection.querySelector("description").textContent}</p>` : '';
-                document.getElementById("tableHotBeverage").innerHTML = `${hotBeverageTitle}${hotBeverageProducts}${hotBeverageDescription}`;
+                document.getElementById("tableHotBeverage").innerHTML = `${hotBeverageTitle}${hotBeverageSubTitle}${hotBeverageProducts}${hotBeverageDescription}`;
             }
 
             const beverageSection = xmlDoc.querySelector("tableBeverage");
