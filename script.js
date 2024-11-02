@@ -32,7 +32,7 @@ function loadXMLMenu() {
                 const foodTitle = "<h2>Food Menu</h2>";
                 const foodProducts = Array.from(foodSection.querySelectorAll("product")).map(createProductHTML).join("");
                 document.getElementById("tableFood").innerHTML = `${foodTitle}${foodProducts}`;
-            }
+            } 
 
             const hotBeverageSection = xmlDoc.querySelector("tableHotBeverage");
             if (hotBeverageSection) {
