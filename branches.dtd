@@ -1,4 +1,3 @@
-<!DOCTYPE menu [
 <!ELEMENT branches (branch+)>
 <!ELEMENT branch (address, contact, openingHours)>
 <!ELEMENT address (street, city, state, mapLink)>
@@ -10,4 +9,3 @@
 <!ELEMENT openingHours (weekday, weekend)>
 <!ELEMENT weekday (#PCDATA)>
 <!ELEMENT weekend (#PCDATA)>
-]>
