@@ -1,6 +1,6 @@
   <!ELEMENT menu (tableFood, tableHotBeverage, tableBeverage)>
   <!ELEMENT tableFood (product+)>
-  <!ELEMENT tableHotBeverage (title, product+, description, image)>
+  <!ELEMENT tableHotBeverage (title, product+, description, image?)>
   <!ELEMENT tableBeverage (product+)>
   <!ELEMENT product (title?, price, description?, size?, image)>
   <!ELEMENT image (#PCDATA)>
