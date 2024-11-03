@@ -31,18 +31,18 @@
     <tableHotBeverage>
         <title>Coffee and hot chocolates</title>
         <product>
-            <size>Small</size>
             <price>$3.00</price>
+            <size>Small</size>
             <image>img/coffeSize.jpg</image>
         </product>
         <product>
-            <size>Regular</size>
             <price>$4.00</price>
+            <size>Regular</size>
             <image>img/coffeSize.jpg</image>
         </product>
         <product>
-            <size>Large</size>
             <price>$4.50</price>
+            <size>Large</size>
             <image>img/coffeSize.jpg</image>
         </product>
         <description>For coffee, please inform the staff of the coffee type.</description>
